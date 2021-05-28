@@ -1,5 +1,5 @@
 // Program to check for command line arguments
-class Hello {
+class Name {
 public static void main(String[] args)
 {
 // check if length of args array is
