@@ -1,19 +1,22 @@
-import java.util.Scanner;
-
- 
-
-class Name
+// Program to check for command line arguments
+class Hello {
+public static void main(String[] args)
 {
-  public static void main(String args[])
-  {
-     String str;
+// check if length of args array is
+// greater than 0
+if (args.length > 0) {
+System.out.println(
+"The command line arguments are:");
+
  
-     Scanner in = new Scanner(System.in);
- 
-     //Get input String
-     System.out.println("Enter a string: ");
-     str = in.nextLine();
-     System.out.println("Input String is: "+str);
-      in.close();
-     }
-     }
+
+// iterating the args array and printing
+// the command line arguments
+for (String val : args)
+System.out.println(val);
+}
+else
+System.out.println("No command line "
++ "arguments found.");
+}
+}
